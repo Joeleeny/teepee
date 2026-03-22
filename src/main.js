@@ -14,7 +14,7 @@ document.body.appendChild(renderer.domElement);
 // Skybox (Codinhood-style textured cube)
 // --------------------------------------------------
 function createPathStrings(filename) {
-  const basePath = "/skybox/";
+  const basePath = import.meta.env.BASE_URL + "skybox/";
   const baseFilename = basePath + filename;
   const fileType = ".jpg";
   const sides = ["ft", "bk", "up", "dn", "rt", "lf"];
